@@ -1,11 +1,567 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat:400,700&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open Sans"/>
+    <title>Responsive Webpage Project</title>
+    <link rel="stylesheet" href="/style.css" type="text/css" >
 </head>
 <body>
+    <!------------------------ This is just a sample page that I have made it contains many copywrite pictures   ------------------------------>
     
+    <header>
+        <nav>
+            <i class="fas fa-laptop-code"></i>
+
+            <div>
+                <div class="dropdown-wrapper">
+                    <a class="menu-item">Quizes<i class="fas fa-caret-down"></i></a>
+
+                    <div class="dropdown">
+                        <a href="#python-q">Python</a>
+                        <a href="#html-q">HTML</a>
+                        <a href="#css-q">CSS</a>
+                        <a href="#js-q">JavaScript</a>
+                    </div>
+                </div>
+                
+                <div class="dropdown-wrapper">
+                    
+                </div>
+                <button class="primary-button" onclick="alert('Lets go. Lets now pick a quiz! Select a quiz in Quizes')">Get Started</button>
+            </div>
+        </nav>
+        <main>
+            <div class="outer-wrapper">
+            <section id="landing">
+                <div id="main-text-wrapper">
+                    <h1>Learn New Today</h1>
+                    <p>In an era where people have started to trade education, we here are making it free and accessible to all.</p>
+                </div>
+            </section>
+        </div>
+<!--------------------------------------  Quizes   ------------------------------------------------------------------------------------------------->
+            <section id="steps">
+                <div id="first-step" class="step-item">
+                    <a href="#python-q" style="text-decoration: none;"><i class="fab fa-python"></i></a>
+                    <h3>Python</h3>
+                    <p>Python is a Dynamic Programming language. It can be used to create complex software like deep learning, image processing, etc and also do web development using django,flask,etc</p>
+                </div>
+                <div id="second-step" class="step-item">
+                    <a href="#html-q" style="text-decoration: none;"><i class="fab fa-html5"></i></a>
+                    <h3>HTML 5</h3>
+                    <p>Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript</p>
+                </div>
+                <div id="third-step" class="step-item">
+                    <a href="#css-q" style="text-decoration: none;"><i class="fab fa-css3-alt"></i></a>
+                    <h3>CSS 3</h3>
+                    <p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+                </div>
+                <div id="fourth-step" class="step-item">
+                    <a href="#js-q" style="text-decoration: none;"><i class="fab fa-js-square"></i></a>
+                    <h3>JavaScript</h3>
+                    <p>JavaScript, often abbreviated as JS, is an interpreted programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</p>
+                </div>
+            </section>
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+            <section id="store">
+                <p id="Connect-heading">Get in Touch</p>
+                <h3>Our Social Media Connections</h3>
+                <p id="store-desc">A well connected person is the most informed.</p>
+                <div id="store-items-wrapper">
+                    <div class="store-item">
+                        <div class="icon-wrapper"><i class="fab fa-linkedin"></i></div>
+                        <h3>LinkedIn</h3>
+                        <p>https://www.linkedin.com/in/raghu-raj-muni/</p>
+                    </div>
+                    <div class="store-item">
+                        <div class="icon-wrapper"><i class="fab fa-instagram"></i></div>
+                        <h3>Instagram</h3>
+                        <p>https://www.instagram.com/<br>i_amraghuraj/</p>
+                    </div>
+                    <div class="store-item">
+                        <div class="icon-wrapper"><i class="fab fa-github"></i></div>
+                        <h3>GitHub</h3>
+                        <p>https://github.com/raghu-raj23</p>
+                    </div>
+                    <div class="store-item">
+                        <div class="icon-wrapper"><i class="fab fa-facebook-square"></i></div>
+                        <h3>FaceBook</h3>
+                        <p>https://www.facebook.com/<br>raghuraj.muni</p>
+                    </div>
+                </div>
+            </section>
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+
+    <h2 class="quizHeader" id="python-q">The Pyhon Quiz!</h2>
+    
+      <table style="background: rgb(6,1,79);
+      background: linear-gradient(113deg, rgba(6,1,79,1) 0%, rgba(9,60,121,0.8463760504201681) 35%, rgba(255,209,0,1) 88%);">
+      <tr>
+        <td>
+            <div>
+                <p class="question">1. How will you print 'Hello World' output?</p>
+  
+              <ul>
+              <input class="answer" type="radio" name="q1" value="1">
+              <label id="correctString1">print("Hello World")</label>
+              <br>
+              <input class="answer" type="radio" name="q1" value="0">
+              <label>cout<<"Hello World"</label>
+              <br>
+              <input class="answer" type="radio" name="q1" value="0">
+              <label>printf("Hello World")</label>
+              <br>
+              <input class="answer" type="radio" name="q1" value="0">
+              <label>output("Hello World")</label>
+              </ul>
+            </div>
+        </td>
+        <td>
+            <div>
+                <p class="question">2. How to get input from console?</p>
+  
+              <ul>
+              <input class="answer" type="radio" name="q2" value="0">
+              <label>in("Statement")</label>
+              <br>
+              <input class="answer" type="radio" name="q2" value="1">
+              <label id="correctString2">input("Statement")</label>
+              <br>
+              <input class="answer" type="radio" name="q2" value="0">
+              <label>cin>>expression</label>
+              <br>
+              <input class="answer" type="radio" name="q2" value="0">
+              <label>scanf("statement")</label>
+              </ul>
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <div>
+                <p class="question">3.What will be the output of the following code : print type(type(int))</p>
+  
+              <ul>
+              <input class="answer" type="radio" name="q3" value="0">
+              <label>type 'int'</label>
+              <br>
+              <input class="answer" type="radio" name="q3" value="1">
+              <label id="correctString3">type 'type'</label>
+              <br>
+              <input class="answer" type="radio" name="q3" value="0">
+              <label>Error</label>
+              <br>
+              <input class="answer" type="radio" name="q3" value="0">
+              <label>0</label>
+              </ul>
+          </div>
+        </td>
+        <td>
+            <div>
+                <p class="question">4. What is called when a function is defined inside a class?</p>
+  
+              <ul>
+              <input class="answer" type="radio" name="q4" value="0">
+              <label>Another Function</label>
+              <br>
+              <input class="answer" type="radio" name="q4" value="1">
+              <label id="correctString4">Method</label>
+              <br>
+              <input class="answer" type="radio" name="q4" value="0">
+              <label>Class</label>
+              <br>
+              <input class="answer" type="radio" name="q4" value="0">
+              <label>Module</label>
+              </ul>
+            </div>
+        </td>
+      </tr>
+      </table>
+  <br/>
+    <div class="submitter">
+            <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+            type="submit" value="Submit" />
+      </div>
+    
+  <!--show only wrong answers on submit-->
+      <div class="quizAnswers" id="correctAnswer1"></div>
+          <div class="quizAnswers" id="correctAnswer2"></div>
+      <div class="quizAnswers" id="correctAnswer3"></div>
+      <div class="quizAnswers" id="correctAnswer4"></div>
+  
+  <!--show score upon submit-->
+      <div>
+          <h2 class="quizScore" id="userScore"></h2>
+      </div>
+      </div>
+  <br>
+  <br>
+  <br>
+  <h2 class="quizHeader" id="html-q">The HTML 5 Quiz!</h2>
+    
+      <table style="background: rgb(204,128,34);
+      background: linear-gradient(162deg, rgba(204,128,34,1) 0%, rgba(253,45,45,1) 100%);">
+      <tr>
+        <td>
+            <div>
+                <p class="question">1. HTML Stands for _____________.</p>
+  
+              <ul>
+              <input class="answer" type="radio" name="q1" value="1">
+              <label id="correctString1">Hyper Text Markup Language</label>
+              <br>
+              <input class="answer" type="radio" name="q1" value="0">
+              <label>None of these</label>
+              <br>
+              <input class="answer" type="radio" name="q1" value="0">
+              <label>Hyper Tech Markup Language</label>
+              <br>
+              <input class="answer" type="radio" name="q1" value="0">
+              <label>Hyper Text Makeup Language</label>
+              </ul>
+            </div>
+        </td>
+        <td>
+            <div>
+                <p class="question">2. which of the following tag is used to mark a begining of paragraph ?</p>
+  
+              <ul>
+              <input class="answer" type="radio" name="q2" value="0">
+              <label>br tag</label>
+              <br>
+              <input class="answer" type="radio" name="q2" value="1">
+              <label id="correctString2">p tag</label>
+              <br>
+              <input class="answer" type="radio" name="q2" value="0">
+              <label>td tag</label>
+              <br>
+              <input class="answer" type="radio" name="q2" value="0">
+              <label>li tag</label>
+              </ul>
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <div>
+                <p class="question">3. The attribute of form tag</p>
+  
+              <ul>
+              <input class="answer" type="radio" name="q3" value="0">
+              <label>method</label>
+              <br>
+              <input class="answer" type="radio" name="q3" value="1">
+              <label id="correctString3">Both (a)&(b)</label>
+              <br>
+              <input class="answer" type="radio" name="q3" value="0">
+              <label>action</label>
+              <br>
+              <input class="answer" type="radio" name="q3" value="0">
+              <label>none of these</label>
+              </ul>
+          </div>
+        </td>
+        <td>
+            <div>
+                <p class="question">4. Markup tags tell the web browser</p>
+  
+              <ul>
+              <input class="answer" type="radio" name="q4" value="0">
+              <label>How to display message box on page</label>
+              <br>
+              <input class="answer" type="radio" name="q4" value="1">
+              <label id="correctString4">How to display the page</label>
+              <br>
+              <input class="answer" type="radio" name="q4" value="0">
+              <label>How to organise the page</label>
+              <br>
+              <input class="answer" type="radio" name="q4" value="0">
+              <label>None of these</label>
+              </ul>
+            </div>
+        </td>
+      </tr>
+      </table>
+  <br/>
+    <div class="submitter">
+            <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+            type="submit" value="Submit" />
+      </div>
+    
+  <!--show only wrong answers on submit-->
+      <div class="quizAnswers" id="correctAnswer1"></div>
+          <div class="quizAnswers" id="correctAnswer2"></div>
+      <div class="quizAnswers" id="correctAnswer3"></div>
+      <div class="quizAnswers" id="correctAnswer4"></div>
+  
+  <!--show score upon submit-->
+      <div>
+          <h2 class="quizScore" id="userScore"></h2>
+      </div>
+      </div>
+
+
+
+      <h2 class="quizHeader" id="css-q">The CSS Quiz!</h2>
+    
+      <table style="background: rgb(2,0,36);
+      background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,0.7567401960784313) 35%, rgba(0,212,255,1) 88%);">
+      <tr>
+        <td>
+            <div>
+                <p class="question">1. If we want define style for an unique element, then which css selector will we use ?</p>
+  
+              <ul>
+              <input class="answer" type="radio" name="q1" value="1">
+              <label id="correctString1">Id</label>
+              <br>
+              <input class="answer" type="radio" name="q1" value="0">
+              <label>text</label>
+              <br>
+              <input class="answer" type="radio" name="q1" value="0">
+              <label>name</label>
+              <br>
+              <input class="answer" type="radio" name="q1" value="0">
+              <label>class</label>
+              </ul>
+            </div>
+        </td>
+        <td>
+            <div>
+                <p class="question">2. If we don't want to allow a floating div to the left side of an element, which css property will we use ?    </p>
+  
+              <ul>
+              <input class="answer" type="radio" name="q2" value="0">
+              <label>padding</label>
+              <br>
+              <input class="answer" type="radio" name="q2" value="1">
+              <label id="correctString2">clear</label>
+              <br>
+              <input class="answer" type="radio" name="q2" value="0">
+              <label>margin</label>
+              <br>
+              <input class="answer" type="radio" name="q2" value="0">
+              <label>float</label>
+              </ul>
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <div>
+                <p class="question">3. 	
+                    If we want to wrap a block of text around an image, which css property will we use ?</p>
+  
+              <ul>
+              <input class="answer" type="radio" name="q3" value="0">
+              <label>wrap</label>
+              <br>
+              <input class="answer" type="radio" name="q3" value="1">
+              <label id="correctString3">float</label>
+              <br>
+              <input class="answer" type="radio" name="q3" value="0">
+              <label>align</label>
+              <br>
+              <input class="answer" type="radio" name="q3" value="0">
+              <label>push</label>
+              </ul>
+          </div>
+        </td>
+        <td>
+            <div>
+                <p class="question">4. If we want to use a nice looking green dotted border around an image, which css property will we use?</p>
+  
+              <ul>
+              <input class="answer" type="radio" name="q4" value="0">
+              <label>border-decoration</label>
+              <br>
+              <input class="answer" type="radio" name="q4" value="1">
+              <label id="correctString4">border-style</label>
+              <br>
+              <input class="answer" type="radio" name="q4" value="0">
+              <label>border-line</label>
+              <br>
+              <input class="answer" type="radio" name="q4" value="0">
+              <label>border-colour</label>
+              </ul>
+            </div>
+        </td>
+      </tr>
+      </table>
+  <br/>
+    <div class="submitter">
+            <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+            type="submit" value="Submit" />
+      </div>
+    
+  <!--show only wrong answers on submit-->
+      <div class="quizAnswers" id="correctAnswer1"></div>
+          <div class="quizAnswers" id="correctAnswer2"></div>
+      <div class="quizAnswers" id="correctAnswer3"></div>
+      <div class="quizAnswers" id="correctAnswer4"></div>
+  
+  <!--show score upon submit-->
+      <div>
+          <h2 class="quizScore" id="userScore"></h2>
+      </div>
+      </div>
+  <br>
+  <br>
+  <br>
+
+
+  <h2 class="quizHeader" id="js-q">The JavaScript Quiz!</h2>
+    
+      <table style="background: rgb(180,99,58);
+      background: linear-gradient(90deg, rgba(180,99,58,1) 0%, rgba(253,156,29,0.8743872549019608) 41%, rgba(251,252,69,1) 100%);">
+      <tr>
+        <td>
+            <div>
+                <p class="question">1. What is the HTML tag under which one can write the JavaScript code?</p>
+  
+              <ul>
+              <input class="answer" type="radio" name="q1" value="1">
+              <label id="correctString1">script</label>
+              <br>
+              <input class="answer" type="radio" name="q1" value="0">
+              <label>scripted</label>
+              <br>
+              <input class="answer" type="radio" name="q1" value="0">
+              <label>javascript</label>
+              <br>
+              <input class="answer" type="radio" name="q1" value="0">
+              <label>js</label>
+              </ul>
+            </div>
+        </td>
+        <td>
+            <div>
+                <p class="question">2. Which of the following is the correct syntax to display “GeeksforGeeks” in an alert box using JavaScript?</p>
+  
+              <ul>
+              <input class="answer" type="radio" name="q2" value="0">
+              <label>msgbox(“GeeksforGeeks”);</label>
+              <br>
+              <input class="answer" type="radio" name="q2" value="1">
+              <label id="correctString2">alert(“GeeksforGeeks”);</label>
+              <br>
+              <input class="answer" type="radio" name="q2" value="0">
+              <label>msg(“GeeksforGeeks”);</label>
+              <br>
+              <input class="answer" type="radio" name="q2" value="0">
+              <label>alertbox(“GeeksforGeeks”);</label>
+              </ul>
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <div>
+                <p class="question">3. What is the correct syntax for referring to an external script called “geek.js”?</p>
+  
+              <ul>
+              <input class="answer" type="radio" name="q3" value="0">
+              <label>script href=”geek.js”</label>
+              <br>
+              <input class="answer" type="radio" name="q3" value="1">
+              <label id="correctString3">script src=”geek.js”</label>
+              <br>
+              <input class="answer" type="radio" name="q3" value="0">
+              <label>script ref=”geek.js”</label>
+              <br>
+              <input class="answer" type="radio" name="q3" value="0">
+              <label>script name=”geek.js”</label>
+              </ul>
+          </div>
+        </td>
+        <td>
+            <div>
+                <p class="question">4. Which of the following is not a reserved word in JavaScript?</p>
+  
+              <ul>
+              <input class="answer" type="radio" name="q4" value="0">
+              <label>interface</label>
+              <br>
+              <input class="answer" type="radio" name="q4" value="1">
+              <label id="correctString4">program</label>
+              <br>
+              <input class="answer" type="radio" name="q4" value="0">
+              <label>throws</label>
+              <br>
+              <input class="answer" type="radio" name="q4" value="0">
+              <label>short</label>
+              </ul>
+            </div>
+        </td>
+      </tr>
+      </table>
+  <br/>
+    <div class="submitter">
+            <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+            type="submit" value="Submit" />
+      </div>
+    
+  <!--show only wrong answers on submit-->
+      <div class="quizAnswers" id="correctAnswer1"></div>
+          <div class="quizAnswers" id="correctAnswer2"></div>
+      <div class="quizAnswers" id="correctAnswer3"></div>
+      <div class="quizAnswers" id="correctAnswer4"></div>
+  
+  <!--show score upon submit-->
+      <div>
+          <h2 class="quizScore" id="userScore"></h2>
+      </div>
+      </div>
+  <!------------------------------------------------------------------------------------------------------------------------------------->
+            <section id="follow">
+                <div id="left-section">
+                    <img src="https://thumbs.dreamstime.com/z/male-hand-holding-megaphone-follow-us-speech-bubble-follow-us-banner-social-networks-loudspeaker-template-digital-71899734.jpg" alt="Follow" />
+                </div>
+                <div id="right-section">
+                    <div id="text-wrapper">
+                        <h3>Subscribe To The NewsLetter</h3>
+                        <p>To get Updated with latest technologies.</p>
+
+                        <input id="subscribe-email" placeholder="Your Email" style="background-color:rgba(0,0,0,0.8);"/>
+                        <input id="subscribe-btn" type="submit" value="Subscribe" />
+                    </div>
+                </div>
+            </section>
+
+
+            
+            
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+            <section id="address">
+                <div id="address-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16428.861223505548!2d80.05396887128234!3d12.833330207720298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f70d37c35faf%3A0x150be8ecf0c8f817!2sSRM%20Institute%20of%20Science%20%26%20Technology!5e0!3m2!1sen!2sin!4v1581389356211!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <div>
+                        <p class="green-heading">Speak To Us</p>
+                        <h3 class="section-heading">Get In Touch</h3>
+                        <form>
+                            <input class="input-box" type="text" name="name" placeholder="Name" />
+                            <input class="input-box" type="text" name="phone" placeholder="Phone" />
+                            <input class="input-box" type="text" name="subject" placeholder="Subject" />
+                            <input class="input-box" type="email" name="email" placeholder="E-mail" />
+                            <textarea class="input-box">Message</textarea>
+                            <input id="btn-submit" class="primary-button" type="submit" value="Submit Now">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+        <footer>This is Just a Sample Page for Progate WOL By: @Raghu Raj Muni</footer>
+        
+    </header>
+<script src="script.js"></script>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+		<script type="text/javascript" src='questions.json'></script>
+		<script type='text/javascript' src='jsquiz.js'></script>
 </body>
 </html>
